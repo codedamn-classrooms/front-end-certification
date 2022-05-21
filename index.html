@@ -5,125 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Highlighter</title>
+    <title>Find Meals</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h3>Codedamn</h3>
+    <h2>Meals</h2>
 
-    </header>
+    <!-- https://www.themealdb.com/api/json/v1/1/random.php -->
+    <button id="get-random">Get a Random Meal</button>
 
-    <nav>
-        <ul>
-            <li>Learning Paths</li>
-            <li>Courses</li>
-            <li>Pricing</li>
-        </ul>
+    <!-- https://www.themealdb.com/api/json/v1/1/filter.php?c=value -->
+    <label for="filter-meals">Filter Meals by Category</label>
+    <select id="filter-meals">
+        <option value="seafood">Sea Food</option>
+        <option value="chicken">Chiken</option>
+        <option value="goat">Goat</option>
+        <option value="goat">Vegan</option>
+    </select>
 
-        <section>
-            <button>Sign In</button>
-            <button>Register</button>
-        </section>
-    </nav>
-
-    <aside id="sidebar">
-        <div>
-            <a>Dashboard</a>
-        </div>
-
-        <div>
-            <a>My Courses</a>
-        </div>
-
-        <div>
-            <a>Playgrounds</a>
-        </div>
-
-        <div>
-            <a>Learning Paths</a>
-        </div>
-
-        <div>
-            <a>Certificates</a>
-        </div>
-    </aside>
-
-    <main>
-        <h1>Learn Programming
-            Interactively</h1>
-
-        <p>Build projects, practice and learn to code from scratch - without leaving your browser.</p>
-
-        <button>Explore All Roadmaps</button>
-
-        <video src="https://codedamn.com/assets/videos/new-homepage-demo.mp4" muted loop controls autoplay></video>
-
-        <h4>WE GOT YOUR BACK</h4>
-        <h6>Never learn alone.</h6>
-
-        <p>The best part about learning with friends is learning with friends. We tightly integrate our learning
-            platform with our Discord community of learners, teachers, and our reward system. Ask questions 24x7, answer
-            questions of others, gain XP, complete the courses and grow together.</p>
+    <!-- www.themealdb.com/api/json/v1/1/search.php?f=value -->
+    <label for="meal-by-letter">Filter meals by letter</label>
+    <input type="text" maxlength="1" id="meal-by-letter" />
 
 
-        <a href="https://cdm.sh/discord">Join our discord server</a>
-    </main>
-
-    <section id="ads">
-        <div>
-            <h5>Participate in 100 days of projects</h5>
-            <p>Building exciting 20 projects over the span of 100 days, get a change to win exciting prizes by sharing
-                your project. <a href="https://codedamn.com/100-days-of-projects">Register Here</a></p>
-
-        </div>
-    </section>
-
-    <footer>
-        <div>
-            <h3>Solutions</h3>
-            <ul>
-                <li><a href="https://codedamn.com/learning-paths/">Learning Paths</a></li>
-                <li><a href="https://codedamn.com/learning-paths/fullstack">Become a full
-                        stack web developer</a></li>
-                <li><a href="https://codedamn.com//what-programming-language-should-i-learn">What programming language
-                        should I learn?</a></li>
-            </ul>
-        </div>
-        <div>
-            <h3>Support</h3>
-            <ul>
-                <li><a href="https://codedamn.com/contact">Contact Us</a></li>
-                <li><a href="https://codedamn.com/pricing">Pricing</a></li>
-                <li><a href="https://codedamn.com/register">Create a free account</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h3>Company</h3>
-            <ul>
-                <li><a href="https://codedamn.com/news">Blogs</a></li>
-                <li><a href="https://codedamn.freshteam.com/jobs">Careers @codedamn</a></li>
-                <li><a href="https://codedamn.com/jobs">Apply for Jobs</a></li>
-                <li><a href="https://partner.codedamn.com/">Affiliate Program</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h3>Legal</h3>
-            <ul>
-                <li><a href="https://codedamn.com/terms-of-service">Terms</a></li>
-                <li><a href="https://codedamn.freshteam.com/privacy-policy">Privacy Policy</a></li>
-            </ul>
-        </div>
-
-
-    </footer>
-
-    <script src="https://bit.ly/codedamn-web-console"></script>
-    <script src="script.js"></script>
 </body>
 
 </html>
