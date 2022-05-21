@@ -1,2 +1,5 @@
-tabs: ['index.html','script.js']
-terminal-one: static-server -p 1337 --no-cache
+tabs: ['src/App.jsx']
+live-reload-browser: false
+terminal-one: |
+    yarn install
+    yarn dev
