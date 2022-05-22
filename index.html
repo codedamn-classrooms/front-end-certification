@@ -2,41 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find Meals</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Find Meals</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h2>Meals</h2>
+	<h2>Meals API</h2>
 
-    <!-- https://www.themealdb.com/api/json/v1/1/random.php -->
-    <button id="get-random">Get a Random Meal</button>
-
+	<main>
 
 
-    <div id="meal-data"></div>
-
-    <div id="meal-json"></div>
-
-    <!-- https://www.themealdb.com/api/json/v1/1/filter.php?c=value -->
-    <label for="filter-meals">Filter Meals by Category</label>
-    <select id="filter-meals">
-        <option value="seafood">Sea Food</option>
-        <option value="chicken">Chiken</option>
-        <option value="goat">Goat</option>
-        <option value="vegan">Vegan</option>
-    </select>
+		<!-- https://www.themealdb.com/api/json/v1/1/random.php -->
+		<div class="option-container">
+			<h5>Option 1</h5>
+			<button id="get-random">Get a Random Meal</button>
+		</div>
 
 
-    <!-- www.themealdb.com/api/json/v1/1/search.php?f=value -->
-    <label for="meal-by-letter">Filter meals by letter</label>
-    <input type="text" maxlength="1" id="meal-by-letter" />
 
 
+		<!-- https://www.themealdb.com/api/json/v1/1/filter.php?c=value -->
+		<div class="option-container">
+			<h5>Option 2</h5>
+			<label for="filter-meals">Filter Meals by Category</label>
+			<select id="filter-meals">
+				<option value="seafood">Sea Food</option>
+				<option value="chicken">Chicken</option>
+				<option value="goat">Goat</option>
+				<option value="vegan">Vegan</option>
+			</select>
+
+		</div>
+
+
+		<!-- www.themealdb.com/api/json/v1/1/search.php?f=value -->
+		<div class="option-container">
+			<h5>Option 3</h5>
+			<label for="meal-by-letter">Filter meals by letter</label>
+			<input type="text" maxlength="1" id="meal-by-letter" />
+		</div>
+
+	</main>
+
+	<div id="meal-data"></div>
+
+	<div id="meal-json"></div>
+
+	<script src="script.js"></script>
 </body>
 
 </html>

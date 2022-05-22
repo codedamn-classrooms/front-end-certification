@@ -1,3 +1,26 @@
 * {
   box-sizing: border-box;
 }
+
+h2 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option-container {
+  border: 2px solid darkgray;
+  background-color: #e4e4e4;
+  border-radius: 5px;
+  margin: 0px 2px 0px 2px;
+  padding: 3px 6px 3px 6px;
+}
+
+.option-container h5 {
+  text-align: center;
+  margin-top: 0px;
+}
