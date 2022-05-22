@@ -11,7 +11,7 @@ body {
 .container {
   width: 90vmin;
   background-color: #ffffff;
-  padding: 50px 40px;
+  padding: 20px 40px 50px 40px;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -45,4 +45,9 @@ body {
 }
 mark {
   background-color: #ffdd4b;
+}
+
+#heading {
+  text-align: center;
+  margin: 0px 0px 15px 0px;
 }
