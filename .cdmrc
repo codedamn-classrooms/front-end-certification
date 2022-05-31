@@ -1,4 +1,4 @@
-tabs: ['src/App.jsx']
+tabs: ['src/App.jsx', 'src/Slot.jsx', 'src/Slot.css']
 live-reload-browser: false
 terminal-one: |
     yarn install
